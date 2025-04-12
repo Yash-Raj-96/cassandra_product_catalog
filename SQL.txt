@@ -1,0 +1,37 @@
+CREATE KEYSPACE ecommerce
+WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+
+
+USE ecommerce;
+
+
+CREATE TABLE products (
+    product_id UUID PRIMARY KEY,
+    product_name text,
+    price decimal,
+    category text,
+    stock int
+);
+
+
+INSERT INTO products (product_id, product_name, price, category, stock)
+VALUES (uuid(), 'iPhone 14', 79999.00, 'Smartphone', 50);
+
+INSERT INTO products (product_id, product_name, price, category, stock)
+VALUES (uuid(), 'Samsung Galaxy S22', 65000.00, 'Smartphone', 30);
+
+INSERT INTO products (product_id, product_name, price, category, stock)
+VALUES (uuid(), 'Sony WH-1000XM5', 25000.00, 'Headphones', 100);
+
+
+SELECT * FROM products;
+
+
+UPDATE products SET stock = 45 WHERE product_id = 743334c1-c9a8-4583-a84a-78fbaabbb837;
+
+SELECT * FROM products;
+
+DELETE FROM products WHERE product_id = f9d6b1f3-09f4-4446-8f80-8f078d296bd5;
+
+SELECT * FROM products;
+
