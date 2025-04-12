@@ -1,12 +1,6 @@
-Here’s a complete and well-structured `README.md` file based on the details you provided. You can copy and paste this into your project directory:
-
----
-
-```markdown
 # 🛒 NoSQL Database for E-Commerce – Cassandra Product Catalog
 
-This project demonstrates how to set up a simple e-commerce product catalog using **Apache Cassandra**, a distributed NoSQL database. It showcases how NoSQL databases efficiently handle large-scale data, which is crucial for applications like e-commerce.
-
+This project demonstrates how to set up a simple e-commerce product catalog using Apache Cassandra, a distributed NoSQL database. It involves creating a keyspace, defining a product table, inserting product records, and performing basic queries such as selection, update, and deletion of product data. This showcases how NoSQL databases efficiently handle large-scale data for applications like e-commerce.
 ---
 
 ## 📌 Project Overview
@@ -87,19 +81,6 @@ UPDATE products SET stock = 45 WHERE product_id = <your_product_uuid>;
 ```sql
 DELETE FROM products WHERE product_id = <your_product_uuid>;
 ```
-
----
-
-## 📸 Screenshots
-
-| Description                     | Screenshot |
-|---------------------------------|------------|
-| **Keyspace Creation**           | ![Keyspace](screenshots/keyspace_creation.png) |
-| **Table Creation**              | ![Table](screenshots/table_creation.png) |
-| **Inserting Product Records**   | ![Insert](screenshots/insert_records.png) |
-| **Viewing Product Records**     | ![Select](screenshots/view_products.png) |
-| **Updating Stock Values**       | ![Update](screenshots/update_stock.png) |
-| **Deleting Product Record**     | ![Delete](screenshots/delete_product.png) |
 
 ---
 
