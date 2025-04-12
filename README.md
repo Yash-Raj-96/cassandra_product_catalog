@@ -1,5 +1,5 @@
 # 🛒 NoSQL Database for E-Commerce – Cassandra Product Catalog
-
+-
 This project demonstrates how to set up a simple e-commerce product catalog using Apache Cassandra, a distributed NoSQL database. It involves creating a keyspace, defining a product table, inserting product records, and performing basic queries such as selection, update, and deletion of product data. This showcases how NoSQL databases efficiently handle large-scale data for applications like e-commerce.
 ---
 
@@ -82,8 +82,6 @@ UPDATE products SET stock = 45 WHERE product_id = <your_product_uuid>;
 DELETE FROM products WHERE product_id = <your_product_uuid>;
 ```
 
----
-
 ## ✅ Expected Output
 
 - A functional Cassandra product catalog database.
@@ -104,7 +102,3 @@ DELETE FROM products WHERE product_id = <your_product_uuid>;
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```
-
----
-
-Let me know if you’d like the screenshots embedded directly with raw GitHub URLs or help with making this a live tutorial (e.g., in a Jupyter Notebook or blog format).
